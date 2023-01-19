@@ -25,3 +25,8 @@ npm run dev
 ```
 
 - And access it in your brower with ```http://localhost:3000/```
+
+
+An example of the email that will be sent:
+
+![Example of the email](https://github.com/KauaLimaMartins/Health-Clinic/blob/main/readme-assets/prtsc/email.png)
