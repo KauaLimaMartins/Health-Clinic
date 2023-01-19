@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": ["node_modules/", "dist/"],
+  "rules": {
+    "@next/next/no-img-element": "off"
+  }
+}

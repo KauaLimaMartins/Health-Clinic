@@ -2,9 +2,19 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  pageExtensions: ["page.tsx"],
   compiler: {
     styledComponents: true,
   },
-}
+  webpack: (config, _) => {
+    config.module.rules.push({
+      test: /\.ttf?$/i,
+      type: "asset/resource",
+      dependency: { not: ["url"] },
+    });
 
-module.exports = nextConfig
+    return config;
+  },
+};
+
+module.exports = nextConfig;
